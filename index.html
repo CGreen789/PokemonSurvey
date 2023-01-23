@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title id="main-title">Pokémon Survey Form</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Pokémon Survey Form</h1>
+<p id="description">A short survey to find out all your Pokémon preferences.</p>
+<form id="survey-form">
+<fieldset>
+  <h2 id="personal-details">Personal Details</h2>
+    <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Write your full name..." /></label>
+    <label id="number-label" for="number">Enter Your Age (years): <input id="number" name="age" type="number" min ="13" max="120" placeholder="Write your age in years..." required /></label>
+    <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Write your email..." required /></label>
+</fieldset>
+<fieldset>
+  <h2 id="favourites">Favourites:</h2>
+  <h3>What is your favourite Pokémon type?</h3>
+    <label for="normal"><input id="normal" type="radio" name="fav-type" value="normal" class="inline" /> Normal</label>
+    <label for="fire"><input id="fire" type="radio" name="fav-type" value="fire" class="inline" /> Fire</label>
+    <label for="water"><input id="water" type="radio" name="fav-type" value="water" class="inline"  /> Water</label>
+    <label for="grass"><input id="grass" type="radio" name="fav-type" value="grass" class="inline" /> Grass</label>
+    <label for="flying"><input id="flying" type="radio" name="fav-type" value="flying" class="inline" /> Flying</label>
+    <label for="fighting"><input id="fighting" type="radio" name="fav-type" value="fighting" class="inline" /> Fighting</label>
+    <label for="poison"><input id="poison" type="radio" name="fav-type" value="poison" class="inline" /> Poison</label>
+    <label for="electric"><input id="electric" type="radio" name="fav-type" value="electric" class="inline" /> Electric</label>
+    <label for="ground"><input id="ground" type="radio" name="fav-type" value="ground" class="inline" /> Ground</label>
+    <label for="rock"><input id="rock" type="radio" name="fav-type" value="rock" class="inline" /> Rock</label>
+    <label for="psychic"><input id="psychic" type="radio" name="fav-type" value="psychich" class="inline" /> Psychic</label>
+    <label for="ice"><input id="ice" type="radio" name="fav-type" value="ice" class="inline" /> Ice</label>
+    <label for="ghost"><input id="ghost" type="radio" name="fav-type" value="ghost" class="inline"  /> Ghost</label>
+    <label for="steel"><input id="steel" type="radio" name="fav-type" value="steel" class="inline" /> Steel</label>
+    <label for="dragon"><input id="dragon" type="radio" name="fav-type" value="dragon" class="inline" /> Dragon</label>
+    <label for="dark"><input id="dark" type="radio" name="fav-type" value="dark" class="inline" /> Dark</label>
+    <label for="fairy"><input id="fairy" type="radio" name="fav-type" value="fairy" class="inline"  /> Fairy</label>
+
+    <label for="fav-gen">
+      <h3>Which is your favourite generation of Pokémon?</h3>
+        <select id="dropdown" name="fav-gen">
+          <option value="">(select one)</option>
+          <option value="1">Gen 1: Red, Blue and Yellow</option>
+          <option value="2">Gen 2: Gold, Silver and Crystal</option>
+          <option value="3">Gen 3: Ruby, Sapphire and Emerald</option>
+          <option value="4">Gen 4: Diamond, Pearl and Platinum</option>
+          <option value="5">Gen 5: Black and White</option>
+          <option value="6">Gen 6: X and Y</option>
+          <option value="7">Gen 7: Sun and Moon</option>
+          <option value="8">Gen 8: Sword and Shield</option>
+          <option value="9">Gen 9: Scarlet and Violet</option>
+        </select>
+</fieldset>
+<fieldset>
+  <h2 id="profile-picture">Profile picture:</h2>
+    <label for="pokémon-picture">Upload a profile picture of your favourite Pokémon: <input id="pokémon-picture" type="file" name="file" /></label>
+</fieldset>
+<fieldset>
+  <h2 id="Anything else...">Other information:</h2>
+    <label for="Other">Any other Pokémon you'd like to tell us about:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="..."></textarea>
+      </label>
+<label>
+  <h3>Which is your favourite Eevee evolution?</h3>
+  <br>
+      <input id="" type="checkbox" required name="eevee" class="inline"  value="vaporeon" /> Vaporeon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee" value="jolteon" class="inline" /> Jolteon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/135.png">
+      <br>
+      <input id="" type="checkbox" required name="eevee" value="flareon" class="inline" /> Flareon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee" value="espeon" class="inline" /> Espeon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/196.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee"  value="umbreon" class="inline" /> Umbreon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee"  value="leafeon" class="inline" /> Leafeon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/470.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee"  value="glaceon" class="inline" /> Glaceon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/471.png" id="vaporeon-img">
+      <br>
+      <input id="" type="checkbox" required name="eevee" value="sylveon" class="inline" /> Sylveon <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/700.png" id="vaporeon-img">
+    </label>
+</fieldset>
+<h3>Thank you for completing the Pokémon Survey!</h3>
+<img id="pikachu" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88c4706a-565c-4f0a-acfc-b914df984541/dcbxe9t-25e1fa87-9e5d-49bd-b085-c0c7075d12d5.png/v1/fill/w_1192,h_670,strp/happy_pikachu_vector_by_ryanthescooterguy_dcbxe9t-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvODhjNDcwNmEtNTY1Yy00ZjBhLWFjZmMtYjkxNGRmOTg0NTQxXC9kY2J4ZTl0LTI1ZTFmYTg3LTllNWQtNDliZC1iMDg1LWMwYzcwNzVkMTJkNS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.H975p7dSgWePsT4c45IL2eiabL2tMcJ6o9O2yimhNBY">
+
+<input type="submit" value="Submit" id="submit"/>
+
+</form>
+
+</main>
+</body>
+
+</html>
